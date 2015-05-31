@@ -1,0 +1,26 @@
+Font: 
+Fipps-Regular - http://pheist.net/fonts.php?id=51
+
+Images:
+1) City background, radio - Steven Y Cin Wong (http://syc-dimension-bct.tumblr.com/)
+
+2) Pixel bedroom and burger joint - found through Google search and tumblr
+
+3) Burger guy - taken from Hotline Miami 2 game
+
+4) Level textures at level 2 - http://moonbeam13.deviantart.com/journal/LittleBigPlanet-2-Level-Creation-Contest-214243473
+
+5) Clouds at level 2 - http://www.reddit.com/r/PixelArt/comments/2ial6o/newbie_id_love_some_feedback_for_my_first_attempt/
+
+Sounds:
+1) jump.wav - http://opengameart.org/content/8-bit-jump-free-sound-effects-1
+
+2) A Real Hero (Instrumental Cover).mp3 - https://soundcloud.com/doug-cairns/college-a-real-hero
+
+3) Deep Cover.mp3, Guided Meditation.mp3, Rust.mp3 - Hotline Miami 1+2 Soundtracks
+
+-------------------------------------------------------------------------
+Everything else is drawn by me.
+_________________________________________________
+
+The game stylistic is a mix between Mirror's Edge 2D (FIrst level) and Hotline Miami (Dialogs and music).
