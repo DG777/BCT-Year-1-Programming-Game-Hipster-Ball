@@ -53,7 +53,7 @@ void draw_Level_2()
 
 void keyPressed_Level_2()
 {
-  if ( key == ' ' )
+  if ( (key == ' ' && ball.levelEnd()) || (key == 's') )
   {
     playDialog2.pause();
     playDialog2.rewind();

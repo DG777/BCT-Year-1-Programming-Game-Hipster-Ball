@@ -6,7 +6,7 @@ Images:
 
 2) Pixel bedroom and burger joint - found through Google search and tumblr
 
-3) Burger guy - taken from Hotline Miami 2 game
+3) Burger guy - from Hotline Miami 2 game
 
 4) Level textures at level 2 - http://moonbeam13.deviantart.com/journal/LittleBigPlanet-2-Level-Creation-Contest-214243473
 
@@ -23,4 +23,4 @@ Sounds:
 Everything else is drawn by me.
 _________________________________________________
 
-The game stylistic is a mix between Mirror's Edge 2D (FIrst level) and Hotline Miami (Dialogs and music).
+The game style is a mix between Mirror's Edge 2D (FIrst level) and Hotline Miami (Dialogs and music).

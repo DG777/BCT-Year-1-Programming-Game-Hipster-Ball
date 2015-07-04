@@ -1,3 +1,20 @@
+/*
+ * COMP570 Programming for Creativity 2015 S1
+ *
+ * Final Project
+ * Student ID: 14868845
+ * 
+ * Description:
+ * A classic 2D platformer and a side-scroller with a physics engine consisting of 2 main levels
+ * and a 3rd one which is randomly generated each time; also includes a short story and dialogs.
+ * P.S. If the level 2 is a bit hard you can press 'S' to skip it.
+ *
+ * Sources: Copyright, assets used.txt file in the game folder, lists all the sources used
+ *
+ * @author Matthew Tarchutkin
+ * @version 1.3 - 3.06.2015
+ */
+
 // Import Minim (Sound library)
 import ddf.minim.effects.*;
 import ddf.minim.analysis.*;
@@ -6,7 +23,7 @@ import ddf.minim.spi.*;
 import ddf.minim.*;
 import ddf.minim.ugens.*;
 
-// Importing PBox2D and JBox2D
+// Importing PBox2D and JBox2D (Physics engine)
 import shiffman.box2d.*;
 import org.jbox2d.common.*;
 import org.jbox2d.dynamics.joints.*;
@@ -16,8 +33,6 @@ import org.jbox2d.common.*;
 import org.jbox2d.dynamics.*;
 import org.jbox2d.dynamics.contacts.*;
 import org.jbox2d.dynamics.Body;
-
-
 
 // Declaring objects
 Box2DProcessing boxw;
@@ -69,10 +84,14 @@ final int END = 7;
 
 int gameState;
 
+boolean escapeScreen = false;
+
 void setup()
 {
   size(800, 450);
   smooth();
+
+  escapeScreen = false;
 
   // Setup Dialog
   dialog = loadStrings("Dialogs/Script.txt");
@@ -89,7 +108,7 @@ void setup()
   /*
    * Load Images
    */
-  //  load background, start screen, gameover, end
+  //  load background, start screen, gameover
   ballTexture = loadImage("ball.png");
   intro = loadImage("intro.png");
   gamebg1 = loadImage("Level1Sprites/gamebg1.png");
@@ -132,15 +151,33 @@ void draw()
 {
   switch ( gameState )
   {
-  case INTRO : draw_Intro(); break;
-  case DIALOG_1 : draw_Dialog_1(); break;
-  case LEVEL_1 : draw_Level_1(); break;
-  case DIALOG_2 : draw_Dialog_2(); break;
-  case LEVEL_2 : draw_Level_2(); break;
-  case DIALOG_3 : draw_Dialog_3(); break;
-  case BONUS : draw_Bonus(); break;
-  case END : draw_End(); break;
+  case INTRO : 
+    draw_Intro(); 
+    break;
+  case DIALOG_1 : 
+    draw_Dialog_1(); 
+    break;
+  case LEVEL_1 : 
+    draw_Level_1(); 
+    break;
+  case DIALOG_2 : 
+    draw_Dialog_2(); 
+    break;
+  case LEVEL_2 : 
+    draw_Level_2(); 
+    break;
+  case DIALOG_3 : 
+    draw_Dialog_3(); 
+    break;
+  case BONUS : 
+    draw_Bonus(); 
+    break;
+  case END : 
+    draw_End(); 
+    break;
   }
+
+  escMode();
 }
 
 /*
@@ -175,4 +212,3 @@ void stop()
   minim = null;
   super.stop();
 }
-
